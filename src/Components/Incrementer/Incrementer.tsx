@@ -1,17 +1,15 @@
 import React, { useState } from "react";
+import { MyButton } from "./style";
 
-export const Incrementer: React.FC<{ color?: string }> = ({ color }) => {
-  const [value, setValue] = useState<number>(0);
-
+export const Incrementer: React.FC<{ color?: string, onClick: any }> = ({ color, onClick }) => {
   return (
     <>
-      <button
-        style={{ color: color || "grey" }}
-        onClick={() => setValue(value + 1)}
+      <MyButton
+        onClick={onClick}
       >
         Push
-      </button>
-      <h1>{value}</h1>
+      </MyButton>
+      <h1>Click</h1>
     </>
   );
 };

@@ -17,7 +17,13 @@ module.exports = {
     filename: "index.js",
   },
   module: {
-    rules: [...webpackRules],
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      ...webpackRules,
+    ],
   },
   devServer: {
     historyApiFallback: true,
