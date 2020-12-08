@@ -1,4 +1,5 @@
 import React from "react";
 import { render } from "react-dom";
+import { Incrementer } from "./Components/Incrementer";
 
-render(<h1>Hello React</h1>, document.getElementById("root"));
+render(<Incrementer />, document.getElementById("root"));
