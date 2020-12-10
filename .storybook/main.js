@@ -1,4 +1,3 @@
-const custom = require('../webpack.config.js');
 const webpackRules = require("../webpackRules");
 
 module.exports = {
